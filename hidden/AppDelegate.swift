@@ -72,5 +72,8 @@ class AppDelegate: NSObject, NSApplicationDelegate{
         
         Constant.isUsingLTRLanguage = (NSApplication.shared.userInterfaceLayoutDirection == .leftToRight)
     }
-   
+    @IBAction func showPref(_ sender: Any) {
+        openPreferencesIfNeeded()
+    }
+    
 }
